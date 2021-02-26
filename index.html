@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercises 03</title>
+</head>
+<body>
+<h3>Conditions</h3>
+    <label>Q1 Maximum Number</label>
+        <input type="number" id="nu1">
+        <input type="number" id="nu2">
+        <input type="button" value="Check" onclick="Max1()">
+        <span id="Max1Show"></span>
+    <br>
+    <label>Q2 Maximum Number</label>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="number" id="num3">
+        <input type="button" value="Check" onclick="Max2()">
+        <span id="Max2Show"></span>
+    <br>
+    <label>Q3 Positive or Negative Number</label>
+        <input type="number" id="neg">
+        <input type="button" value="Check" onclick="Neg()">
+        <span id="NegShow"></span>
+    <br>
+    <label>Q4 Number is Divisible by 5 and 11</label>
+        <input type="number" id="div">
+        <input type="button" value="Check" onclick="Div()">
+        <span id="DivShow"></span>
+    <br>
+    <label>Q5 Number is Even or Odd Without Modulus</label>
+        <input type="number" id="evenOdd">
+        <input type="button" value="Check" onclick="EvenOdd()">
+        <span id="EvenOddShow"></span>
+    <br>
+    <label>Q6 Year is Leap on Not</label>
+        <input type="number" id="leap">
+        <input type="button" value="Check" onclick="Leap()">
+        <span id="LeapShow"></span>
+    <br>
+    <label>Q7 Character is Alphabet or Not</label>
+        <input type="text" id="alpha">
+        <input type="button" value="Check" onclick="Alpha()">
+        <span id="AlphaShow"></span>
+    <br>
+    <label>Q8 Character is Vowel or Consonant</label>
+        <input type="text" id="vowel">
+        <input type="button" value="Check" onclick="Vowel()">
+        <span id="VowelShow"></span>
+    <br>
+    <label>Q9 Character is Alphabet, Digit or Special Character</label>
+        <input type="text" id="char">
+        <input type="button" value="Check" onclick="Char()">
+        <span id="CharShow"></span>
+    <br>
+    <label>Q10 Prime Number or Not</label>
+        <input type="number" id="prime">
+        <input type="button" value="Check" onclick="Prime()">
+        <span id="PrimeShow"></span>
+<h3>Strings Handling</h3>
+    <label>Q1 Find a Length of a String</label>
+        <input type="text" id="length">
+        <input type="button" value="Check" onclick="Length()">
+        <span id="LengthShow"></span>
+    <br>
+    <label>Q2 Copy one String to another</label>
+        <input type="text" id="str">
+        <input type="button" value="Copy" onclick="Str()">
+        <span id="StrShow"></span>
+    <br>
+    <label>Q3 Concatenate 2 Strings</label>
+        <input type="text" id="sttr1" placeholder="Enter Your First Name">
+        <input type="text" id="sttr2" placeholder="Enter Your Last Name">
+        <input type="button" value="Concatenate" onclick="Sttr()">
+        <span id="SttrShow"></span>
+    <br>
+    <label>Q4 Compare 2 Strings</label>
+        <input type="text" id="stir1" placeholder="1st String">
+        <input type="text" id="stir2" placeholder="2nd String">
+        <input type="button" value="Compare" onclick="Stir()">
+        <span id="StirShow"></span>
+    <br>
+    <label>Q5 Convert a String Uppercase</label>
+        <input type="text" id="upper">
+        <input type="button" value="Convert" onclick="Upper()">
+        <span id="UpperShow"></span>
+    <br>
+    <label>Q6 Convert a String Lowercase</label>
+        <input type="text" id="lower">
+        <input type="button" value="Convert" onclick="Lower()">
+        <span id="LowerShow"></span>
+    <br>
+    <label>Q7 Toogle Case String</label>
+        <input type="text" id="toggle">
+        <input type="button" value="Toggle" onclick="Toggle()">
+        <span id="ToggleShow"></span>
+    <br>
+    <label>Q8 Total Alphabet, Digits or Special Character</label>
+        <input type="text" id="total">
+        <input type="button" value="Count" onclick="Total()">
+        <span id="TotalShow"></span>
+    <br>
+    <label>Q9 Total Vowels and Consonant</label>
+        <input type="text" id="totalvowel">
+        <input type="button" value="Count" onclick="TotalVowel()">
+        <span id="TotalVowelShow"></span>
+    <br>
+    <label>Q10 Total Words</label>
+        <input type="text" id="words">
+        <input type="button" value="Count" onclick="Words()">
+        <span id="WordsShow"></span>
+    <br>
+    <label>Q11 Reverse String</label>
+        <input type="text" id="reverse">
+        <input type="button" value="Reverse" onclick="Reverse()">
+        <span id="ReverseShow"></span>
+    <br>
+    <label>Q12 Palindrome String</label>
+        <input type="text" id="palindrome">
+        <input type="button" value="Check" onclick="Palindrome()">
+        <span id="PalindromeShow"></span>
+    <br>
+    <label>Q13 Reverse Words: </label>
+        <span id="ArrayWords"></span>
+        <input type="button" value="Reverse" onclick="ReverseWords()">
+        <span id="ReverseWordsShow"></span>
+    <br>
+    <label>Q14 First Character in a String</label>
+        <input type="text" id="firststring">
+        <input type="button" value="Check" onclick="FirstString()">
+        <span id="FirstStringShow"></span>
+    <br>
+    <label>Q15 Last Character in a String</label>
+        <input type="text" id="laststring">
+        <input type="button" value="Check" onclick="LastString()">
+        <span id="LastStringShow"></span>
+    <br>
+<h3>Array Handling</h3>
+    <label>Q1 Read and Print Elements of an Array</label>
+        <span id="readarray"></span>
+        <input type="button" value="Read" onclick="ReadArray()">
+        <span id="ReadArrayShow"></span>
+    <br>
+    <label>Q2 Print All Negative Elements from an Array</label>
+        <span id="negativearray"></span>
+        <input type="button" value="Print" onclick="NegativeArray()">
+        <span id="NegativeArrayShow"></span>
+    <br>
+    <label>Q3 Print Sum of all Elements from an Array</label>
+        <span id="sumarray"></span>
+        <input type="button" value="Print" onclick="SumArray()">
+        <span id="SumArrayShow"></span>
+    <br>
+    <label>Q4 Print Maximum and Minimun Elements from an Array</label>
+        <span id="maxminarray"></span>
+        <input type="button" value="Print" onclick="MaxMinArray()">
+        <span id="MaxArrayShow"></span>
+        <span id="MinArrayShow"></span>
+    <br>
+    <label>Q5 Print 2nd Largest Elements from an Array</label>
+        <span id="secondlargearray"></span>
+        <input type="button" value="Print" onclick="SecondLargeArray()">
+        <span id="SecondLargeArrayShow"></span>
+    <br>
+    <label>Q6 Count Even and Odd Elements from an Array</label>
+        <span id="evenoddarray"></span>
+        <input type="button" value="Count" onclick="EvenOddArray()">
+        <span id="EvenArrayShow"></span>
+        <span id="OddArrayShow"></span>
+    <br>
+    <label>Q7 Count Negative Elements from an Array</label>
+        <span id="totalNegarray"></span>
+        <input type="button" value="Count" onclick="TotalNegArray()">
+        <span id="TotalNegArrayShow"></span>
+    <br>
+    <label>Q8 Copy All Elements of One Array to another Array:</label>
+        <span id="Copyarray1"></span>
+        <span id="Copyarray2"></span>
+        <input type="button" value="Copy" onclick="CopyArray()">
+        <span id="CopyArrayShow"></span>
+    <br>
+    <label>Q9 Insert an Element in an Array:</label>
+        <span id="InsertSh"></span>
+        <input type="text" id="insert">
+        <input type="button" value="Insert" onclick="Insert()">
+        <span id="InsertShow"></span>
+    <br>
+    <label>Q10 Delete an Element from Array:</label>
+        <span id="del"></span>
+        <input type="number" id="delete" placeholder="Enter the position number to delete.">
+        <input type="button" value="Delete" onclick="Del()">
+        <span id="DelShow"></span>
+    <br>
+<h3>Math Methods</h3>
+    <label>Q1 Round Method Without Math.Round()</label>
+        <input type="number" id="round">
+        <input type="button" value="Round" onclick="Round()">
+        <span id="RoundShow"></span>
+    <br>
+    <label>Q2 Ceil Method Without Math.Ceil()</label>
+        <input type="number" id="ceil">
+        <input type="button" value="Ceil" onclick="Ceil()">
+        <span id="CeilShow"></span>
+    <br>
+    <label>Q3 Floor Method Without Math.Floor()</label>
+        <input type="number" id="floor">
+        <input type="button" value="Floor" onclick="Floor()">
+        <span id="FloorShow"></span>
+    <br>
+<h3>Loops</h3>
+    <label>Q1 Print all Natural Numbers from 1 to N</label>
+        <input type="number" id="natural" placeholder="Enter the Nth Number">
+        <input type="button" value="Print" onclick="Natural()">
+        <span id="NaturalShow"></span>
+    <br>
+    <label>Q2 Print all Natural Numbers in Reverse from N to 1</label>
+        <input type="number" id="naturalReverse" placeholder="Enter the Nth Number">
+        <input type="button" value="Print" onclick="NaturalReverse()">
+        <span id="NaturalReverseShow"></span>
+    <br>
+    <label>Q3 Print all Alphabets from A to Z</label>
+        <input type="button" value="Print" onclick="AtoZ()">
+        <span id="AtoZShow"></span>
+    <br>
+    <label>Q4 Print all Even Numbers from 1 to 100</label>
+        <input type="button" value="Print" onclick="Even()">
+        <span id="EvenShow"></span>
+    <br>
+    <label>Q5 Print all Odd Numbers from 1 to 100</label>
+        <input type="button" value="Print" onclick="Odd()">
+        <span id="OddShow"></span>
+    <br>
+
+
+<script src="./15th Assignment JS Exercises 03.js"></script>
+</body>
+</html>
